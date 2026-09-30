@@ -1,0 +1,34 @@
+{
+  "run_mode": "DEMO (offline · fictional data · mock AI)",
+  "processed_at": "2026-10-09T15:00:00Z",
+  "requests_processed": 10,
+  "by_status": {
+    "READY_TO_CONFIRM": 2,
+    "PROPOSE_ALTERNATIVE": 2,
+    "NO_AVAILABILITY": 1,
+    "NEEDS_REVIEW": 2,
+    "DUPLICATE": 1,
+    "INVALID": 1,
+    "CANCELLED": 1
+  },
+  "overview": [
+    "BK-1001 · READY_TO_CONFIRM · Maya Chen · Thu 15 Oct 2026, 13:00–13:30 GMT+2 (Europe/Berlin)",
+    "BK-1002 · PRIORITY · PROPOSE_ALTERNATIVE · Daniel Okafor · Mon 12 Oct 2026, 10:15–11:00 GMT+1 (Europe/London)",
+    "BK-1003 · PROPOSE_ALTERNATIVE · Sofia Alvarez · Mon 12 Oct 2026, 15:45–16:30 GMT+2 (Europe/Madrid)",
+    "BK-1004 · NO_AVAILABILITY · Liam Novak · Fri 16 Oct 2026, 10:00–11:00 GMT+2 (Europe/Berlin)",
+    "BK-1005 · NEEDS_REVIEW · Ethan Brooks · INCOMPLETE",
+    "BK-1006 · DUPLICATE · Maya Chen · duplicate of BK-1001",
+    "BK-1007 · READY_TO_CONFIRM · Ava Thompson · Tue 13 Oct 2026, 10:15–10:45 EDT (America/New_York)",
+    "BK-1008 · NEEDS_REVIEW · Jordan Blake · SECURITY_FLAG",
+    "BK-1009 · INVALID · Sam Rivera · INVALID_FIELDS",
+    "BK-1010 · CANCELLED · Priya Raman · cancels BK-0990"
+  ],
+  "drafts_prepared": 7,
+  "messages_sent": 0,
+  "calendar_write_eligible": 0,
+  "safety": {
+    "drafts_are_never_sent": true,
+    "calendar_writes_require": "production mode + calendar_writes_enabled + human_approved",
+    "confirmed_slots_checked_against_calendar": true
+  }
+}

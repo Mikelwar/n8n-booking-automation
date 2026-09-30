@@ -1,0 +1,12 @@
+{
+  "name": "n8n-booking-demo",
+  "version": "1.0.0",
+  "private": true,
+  "description": "n8n workflow for booking requests: validation, duplicate detection, timezone normalization, conflict checks, ranked alternative slots and AI-assisted confirmation drafts. Offline demo + production-ready integration path.",
+  "scripts": {
+    "build": "node scripts/build-workflow.js",
+    "test": "node scripts/build-workflow.js && node scripts/test-offline.js",
+    "test:e2e": "sh scripts/e2e/run-e2e.sh"
+  },
+  "engines": { "node": ">=18" }
+}

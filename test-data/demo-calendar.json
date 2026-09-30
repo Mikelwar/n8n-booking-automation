@@ -1,0 +1,84 @@
+{
+  "_meta": {
+    "description": "Fictional internal calendar used by DEMO · Load Calendar Availability. All times are wall-clock times in the calendar's business timezone and are converted to UTC by the workflow. Event titles, clients and booking references are invented.",
+    "fictional": true,
+    "calendar_id": "demo-calendar (not a real calendar ID)",
+    "reference_date": "2026-10-09",
+    "coverage": { "from": "2026-10-12", "to": "2026-10-23" }
+  },
+  "business_timezone": "Europe/Berlin",
+  "business_hours": {
+    "days": ["Mon", "Tue", "Wed", "Thu", "Fri"],
+    "start": "09:00",
+    "end": "17:00"
+  },
+  "recurring_blocks": [
+    { "label": "Lunch break (blocked)", "days": ["Mon", "Tue", "Wed", "Thu", "Fri"], "start": "12:00", "end": "13:00" }
+  ],
+  "day_profile": {
+    "2026-10-12": "partially available",
+    "2026-10-13": "busy, one late-afternoon gap",
+    "2026-10-14": "FULLY BOOKED (leadership offsite)",
+    "2026-10-15": "partially available",
+    "2026-10-16": "mostly available"
+  },
+  "events": [
+    { "id": "EVT-1201", "date": "2026-10-12", "start": "09:00", "end": "09:30", "title": "Weekly team stand-up", "kind": "internal" },
+    { "id": "EVT-1202", "date": "2026-10-12", "start": "10:00", "end": "11:00", "title": "Client onboarding: Riverbend Foods", "kind": "client" },
+    { "id": "EVT-1203", "date": "2026-10-12", "start": "14:00", "end": "15:30", "title": "Solution workshop: Aster Labs", "kind": "client" },
+
+    { "id": "EVT-1301", "date": "2026-10-13", "start": "09:00", "end": "09:30", "title": "Daily stand-up", "kind": "internal" },
+    { "id": "EVT-1302", "date": "2026-10-13", "start": "10:00", "end": "11:00", "title": "Quarterly business review: Kestrel Retail", "kind": "client", "booking_id": "BK-0990" },
+    { "id": "EVT-1303", "date": "2026-10-13", "start": "11:00", "end": "12:00", "title": "Sales pipeline review", "kind": "internal" },
+    { "id": "EVT-1304", "date": "2026-10-13", "start": "13:00", "end": "14:30", "title": "Proposal writing (focus block)", "kind": "blocked" },
+    { "id": "EVT-1305", "date": "2026-10-13", "start": "15:00", "end": "16:00", "title": "Partner call: Solace Health", "kind": "client" },
+
+    { "id": "EVT-1401", "date": "2026-10-14", "start": "09:00", "end": "17:00", "title": "Leadership offsite (whole-day block)", "kind": "blocked" },
+
+    { "id": "EVT-1501", "date": "2026-10-15", "start": "09:00", "end": "10:30", "title": "Hiring panel", "kind": "internal" },
+    { "id": "EVT-1502", "date": "2026-10-15", "start": "11:00", "end": "12:00", "title": "Vendor security review", "kind": "internal" },
+    { "id": "EVT-1503", "date": "2026-10-15", "start": "14:00", "end": "16:00", "title": "Team training: scheduling tools", "kind": "internal" },
+
+    { "id": "EVT-1601", "date": "2026-10-16", "start": "09:00", "end": "09:30", "title": "Daily stand-up", "kind": "internal" },
+    { "id": "EVT-1602", "date": "2026-10-16", "start": "15:00", "end": "17:00", "title": "Month-end reporting (blocked)", "kind": "blocked" },
+
+    { "id": "EVT-1901", "date": "2026-10-19", "start": "09:00", "end": "09:30", "title": "Weekly team stand-up", "kind": "internal" },
+    { "id": "EVT-1902", "date": "2026-10-19", "start": "10:00", "end": "12:00", "title": "Board meeting preparation", "kind": "blocked" },
+    { "id": "EVT-1903", "date": "2026-10-19", "start": "15:00", "end": "16:00", "title": "Client check-in: Riverbend Foods", "kind": "client" },
+
+    { "id": "EVT-2001", "date": "2026-10-20", "start": "09:00", "end": "09:30", "title": "Daily stand-up", "kind": "internal" },
+    { "id": "EVT-2002", "date": "2026-10-20", "start": "13:00", "end": "15:00", "title": "Follow-up workshop: Aster Labs", "kind": "client" },
+
+    { "id": "EVT-2101", "date": "2026-10-21", "start": "09:00", "end": "09:30", "title": "Daily stand-up", "kind": "internal" },
+    { "id": "EVT-2102", "date": "2026-10-21", "start": "10:00", "end": "12:00", "title": "Quarterly planning", "kind": "internal" },
+
+    { "id": "EVT-2201", "date": "2026-10-22", "start": "09:00", "end": "10:30", "title": "Hiring panel", "kind": "internal" },
+
+    { "id": "EVT-2301", "date": "2026-10-23", "start": "09:00", "end": "09:30", "title": "Daily stand-up", "kind": "internal" },
+    { "id": "EVT-2302", "date": "2026-10-23", "start": "14:00", "end": "16:00", "title": "Sprint review", "kind": "internal" }
+  ],
+  "existing_bookings": [
+    {
+      "booking_id": "BK-0990",
+      "email": "priya.raman@kestrel-retail.example",
+      "full_name": "Priya Raman",
+      "meeting_type": "quarterly_review",
+      "date": "2026-10-13",
+      "start": "10:00",
+      "end": "11:00",
+      "calendar_event_id": "EVT-1302",
+      "status": "CONFIRMED"
+    },
+    {
+      "booking_id": "BK-0987",
+      "email": "ops@riverbend-foods.example",
+      "full_name": "Riverbend Foods Operations",
+      "meeting_type": "onboarding",
+      "date": "2026-10-12",
+      "start": "10:00",
+      "end": "11:00",
+      "calendar_event_id": "EVT-1202",
+      "status": "CONFIRMED"
+    }
+  ]
+}
