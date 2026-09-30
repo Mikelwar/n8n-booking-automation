@@ -327,3 +327,14 @@ docs/                                  setup, architecture, portfolio copy, scre
 - Multiple calendars or round-robin owners using free/busy across a team.
 - Rescheduling of existing bookings, using the prepared `RESCHEDULE_EVENT` gate output.
 - An evaluation set for the AI draft path (guardrail pass rate, tone review).
+
+## Screenshots
+
+### Workflow Overview
+![Workflow Overview](docs/screenshots/01-workflow-overview.jpg)
+
+### Demo Execution
+![Demo Execution](docs/screenshots/02-demo-execution.jpg)
+
+### Output Detail
+![Output Detail](docs/screenshots/03-output-detail.jpg)
